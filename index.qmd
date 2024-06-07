@@ -1,0 +1,32 @@
+---
+title: "Chad You"
+about:
+  template: solana
+  image: Chad3.jpg
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com/youcc
+    - icon: github
+      text: Github
+      href: https://github.com/youcc
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/chadyou
+
+---
+
+Hi!
+
+I'm Chad You, Sr Database Administrator at [VUMC Health Policy](https://www.vumc.org/health-policy/welcome-health-policy), where I lead the Research Data Core team.
+
+If you'd like to learn more about what I do, check out one of my projects:
+
+-   [Healthcare Analytics Handbook](https://github.com/youcc/healthcare_analytics_handbook), is the place to start if you want to learn how to do analytics in healthcare. 
+
+-   [Today I Learned](https://github.com/youcc/til).
+
+Outside of work, I love to practice Aikido at [Nashville Aikikai](https://nashvilleaikikai.org/).
+
+
+@ Chad You. All rights reserved. 
