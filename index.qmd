@@ -12,7 +12,7 @@ about:
       href: https://github.com/youcc
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/in/chadyou
+      href: https://www.linkedin.com/in/chadyou/
 
 ---
 
