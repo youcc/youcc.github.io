@@ -24,7 +24,7 @@ If you'd like to learn more about what I do, check out one of my projects:
 
 -   [Healthcare Analytics Handbook](https://github.com/youcc/healthcare_analytics_handbook), is the place to start if you want to learn how to do analytics in healthcare. 
 
--   [Today I Learned](https://github.com/youcc/til).
+-   [Today I Learned](https://github.com/youcc/til), where I save the tricks I learned.
 
 Outside of work, I love to practice Aikido at [Nashville Aikikai](https://nashvilleaikikai.org/).
 
