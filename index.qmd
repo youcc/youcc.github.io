@@ -2,7 +2,7 @@
 title: "Chad You"
 about:
   template: solana
-  image: Chad3.jpg
+  image: images/chad3_ai.jpg
   links:
     - icon: twitter
       text: twitter
@@ -16,17 +16,12 @@ about:
 
 ---
 
-Hi!
+Hi there!
 
-I'm Chad You, Sr Database Administrator at [VUMC Health Policy](https://www.vumc.org/health-policy/welcome-health-policy), where I lead the Research Data Core team.
+I'm Chad You, Sr Database Administrator at [VUMC Health Policy](https://www.vumc.org/health-policy/welcome-health-policy), where I lead the Data Core team.
 
-If you'd like to learn more about what I do, check out one of my projects:
+Professionaly, I love teaching healthcare analytics, researching digital health, and developing data solutions. 
 
--   [Healthcare Analytics Handbook](https://github.com/youcc/healthcare_analytics_handbook), is the place to start if you want to learn how to do analytics in healthcare. 
-
--   [Today I Learned](https://github.com/youcc/til), where I save the tricks I learned.
+If you’ve found my blogs helpful and want to buy me a coffee or tea, feel free to contribute over at [ko-fi.com/chadyou](https://ko-fi.com/chadyou).
 
 Outside of work, I love to practice Aikido at [Nashville Aikikai](https://nashvilleaikikai.org/).
-
-
-@ Chad You. All rights reserved. 

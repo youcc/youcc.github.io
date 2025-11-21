@@ -1,0 +1,27 @@
+---
+title: "Happy 4th of July"
+date: "2024-07-04"
+categories: [til, holiday] 
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+On July 4th, the United States celebrates Independence Day. Besides the American flag, one common decoration for this holiday is the half-circle flag shown below.
+
+![](20240704.jpg)
+
+I’ve always wondered what this type of flag is called. After asking MS Copilot, I learned a new term: pleated flags.
+
+![](202407042.jpg)
+
+Pleated flags, also known as bunting flags, are typically hung indoors or outdoors during festivals or celebrations for decorative purposes. Here are some general guidelines:
+
+- **Design**: Pleated flags are usually half-circle or fan-shaped. They often feature a combination of red, white, and blue to resemble the American flag.
+
+- **Usage**: They are commonly used during patriotic events, holidays, or celebrations, adding a festive touch to homes, businesses, and public spaces.
+
+- **Material**: Pleated flags are typically made from lightweight, durable bunting fabric. Traditional materials include cotton or polyester.
+
+- **Display**: When displaying half-circle flags:
+    - Hang them vertically or horizontally.
+    - Secure them properly to prevent sagging or twisting.
+    - Avoid using them as actual flags on flagpoles; they are decorative items.

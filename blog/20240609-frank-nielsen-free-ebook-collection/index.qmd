@@ -1,0 +1,14 @@
+---
+title: "Frank Nielsen's free ebook collection"
+author: "Chad You"
+date: "2024-06-09"
+categories: [free, ebook, AI] # self-defined categories
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+![](20240609.jfif)
+
+Looking for curated FREE ebook lists? Check out Frank Nielsen’s collection! From visual computing to Artificial Intelligence, explore a treasure trove of knowledge. 🤓
+
+
+🔗 [Frank Nielsen's Free ebooks](https://franknielsen.github.io/Books/CuratedBookLists.html)  
+

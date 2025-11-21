@@ -1,0 +1,44 @@
+---
+title: "How to create a personal website using Quarto and Azure"
+author: "Chad You"
+date: "2024-06-10"
+categories: [howto, Quarto, Azure] # self-defined categories
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+Creating a website is very easy and simple if you are not a programmer. Here are the steps about how to create a personal website using Quarto and Azure.
+
+## 1. Buy a domain name
+
+- Namecheap is cheaper than big names like GoDaddy. The website is very to use. Let's go with [namecheap.com](https://www.namecheap.com/).
+
+- Click "SIGN UP" to create an account. 
+![](202406102.jpg)
+
+## 2. Create a website project using Quarto in local  
+
+- Follow the instruction on Quarto, [Create a website project using Quarto](https://quarto.org/docs/websites/). 
+
+- You can use either VS Code, RStudio, or Terminal to run Quarto. Choose your favoriate. 
+
+![](202406101.jpg)
+
+
+## 3. Publish your project to GitHub
+- If you have a [GitHub](https://github.com/) account, create a new repo from your Quarto project directory, commit the changes, then push to GitHub.
+
+## 4. Create a static web app using Azure Static Web Apps
+
+- Follow this instruction to publish your website using Azure Static Web Apps.
+[Quickstart: Build your first static site with Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=vanilla-javascript)
+
+## 5. Set up domain DNS in namecheap 
+
+- Copy your app link from Azure Portal under Custom domains. 
+![](202406103.jpg)
+
+- Open the Advanced DNS tab in your namecheap account, creat a new "CNAME Record" and add the app link as below.
+    - set Host as "www".
+    - set TTL as "5 min"
+
+![](202406104.jpg)

@@ -1,0 +1,15 @@
+---
+title: "Resources"
+listing: 
+  contents: resources # all Quarto docs in the `posts` directory will be included on your listing page
+  type: default # or `default` or `table` or `grid`; each type has its own set of yaml options to include
+  sort: "date desc" # can also sort on more than one field
+  categories: true # allows you to sort posts by assigned categories 
+  image-align: right
+  max-description-length: 175
+  date-format: medium
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---

@@ -1,0 +1,13 @@
+---
+title: "Welcome to my blog"
+author: "Chad You"
+date: "2024-06-08"
+categories: [news] # self-defined categories
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+This is the first post in a Quarto blog. Welcome!
+
+![](welcome_banner.jfif)
+
+I've used WordPress and Blogger in the past. It's quit difficult to customize sometimes. Quarto makes so many things easier.  

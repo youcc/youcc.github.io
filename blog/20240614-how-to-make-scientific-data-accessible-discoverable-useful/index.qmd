@@ -1,0 +1,24 @@
+---
+title: "How to make your scientific data accessible, discoverable and useful"
+date: "2024-06-14"
+categories: [data, management, nature]# self-defined categories
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+How to make your scientific data accessible, discoverable and useful? 
+
+Check out these seven tips for effectively sharing your data, which is published on Nature.
+
+Seven tips:  
+- Craft metadata  
+- Over-share   
+- Embrace standards  
+- Consider the format  
+- Include code  
+- Think accessibility  
+- Take the plunge  
+ 
+
+🔗 [How to make your scientific data accessible, discoverable and useful](https://www.nature.com/articles/d41586-023-01929-7)  
+
+![](20240614.jpg)

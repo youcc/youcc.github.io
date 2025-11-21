@@ -1,13 +1,25 @@
 project:
   type: website
-  output-dir: docs
 
 website:
   title: "Chad You"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - text: "Home"
+        href: index.qmd
+      - text: "Blog"
+        file: blog.qmd
+      - text: "Projects"
+        href: https://github.com/youcc/healthcare_analytics_handbook
+      - text: "Consulting"
+        href: https://calendly.com/chadyou
+  site-url: https://www.chadyou.com
+  favicon: images/ucc_favicon.ico
+        
+  page-footer: 
+    background: light
+    left: © Chad You. All rights reserved.
+    right: This website is built with [Quarto](https://quarto.org)
 
 format:
   html:
