@@ -17,38 +17,101 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #fafafa;
+            background-color: #f5f6f8;
         }
 
+        /* ── Header ── */
         header {
-            background: linear-gradient(135deg, #8B7355 0%, #D4AF37 100%);
+            background-color: #1e2d45;
             color: white;
-            padding: 60px 20px 50px;
+            padding: 56px 20px 0;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-bottom: 4px solid #D4AF37;
+        }
+
+        .header-inner {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .headshot {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #D4AF37;
+            background-color: #2e4166;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2em;
+            font-weight: 700;
+            color: #D4AF37;
+            letter-spacing: 0.03em;
+            /* Replace with: background-image: url('headshot.jpg'); background-size: cover; */
         }
 
         header h1 {
-            font-size: 2.8em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 2.6em;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
         }
 
         header .title {
-            font-size: 1.15em;
+            font-size: 1.1em;
             font-weight: 400;
-            opacity: 0.95;
-            margin-top: 8px;
+            opacity: 0.85;
+            margin-top: 6px;
             letter-spacing: 0.02em;
         }
 
         header .tagline {
-            font-size: 1em;
+            font-size: 0.95em;
             font-weight: 300;
-            margin-top: 8px;
-            opacity: 0.85;
+            margin-top: 6px;
+            opacity: 0.7;
         }
 
+        /* ── Metrics bar ── */
+        .metrics-bar {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin-top: 36px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .metric {
+            flex: 1;
+            max-width: 180px;
+            padding: 18px 12px;
+            border-right: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+
+        .metric:last-child {
+            border-right: none;
+        }
+
+        .metric-number {
+            display: block;
+            font-size: 1.7em;
+            font-weight: 700;
+            color: #D4AF37;
+            line-height: 1.1;
+        }
+
+        .metric-label {
+            display: block;
+            font-size: 0.72em;
+            opacity: 0.7;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        /* ── Container ── */
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -56,19 +119,19 @@
         }
 
         section {
-            margin: 40px 0;
+            margin: 32px 0;
             padding: 30px;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
         }
 
         section h2 {
-            color: #8B7355;
+            color: #1e2d45;
             border-bottom: 3px solid #D4AF37;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            font-size: 1.6em;
+            font-size: 1.5em;
         }
 
         section p {
@@ -76,7 +139,11 @@
             margin-bottom: 15px;
         }
 
-        /* Career Highlights */
+        section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ── Career Highlights ── */
         .highlights-list {
             list-style: none;
             padding: 0;
@@ -85,7 +152,7 @@
         .highlights-list li {
             font-size: 1.05em;
             padding: 10px 0 10px 20px;
-            border-bottom: 1px solid #f0e8d6;
+            border-bottom: 1px solid #eef0f3;
             position: relative;
         }
 
@@ -101,29 +168,48 @@
             font-size: 0.9em;
         }
 
-        /* Tech Stack */
+        /* ── Skills & Scope ── */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .skills-group h3 {
+            font-size: 0.78em;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
         .stack-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 5px;
+            gap: 8px;
         }
 
         .stack-tag {
-            background: #f4e4bc;
-            color: #8B7355;
-            padding: 6px 14px;
+            background: #eef0f3;
+            color: #1e2d45;
+            padding: 5px 12px;
             border-radius: 20px;
-            font-size: 0.92em;
+            font-size: 0.88em;
             font-weight: 500;
         }
 
-        /* Project Cards */
+        .stack-tag.scope {
+            background: #fff8e6;
+            color: #8B6914;
+            border: 1px solid #D4AF37;
+        }
+
+        /* ── Project Cards ── */
         .project-card {
-            background: #f8f9fa;
+            background: #f8f9fb;
             padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            border-radius: 6px;
+            margin-bottom: 16px;
             border-left: 4px solid #D4AF37;
         }
 
@@ -132,116 +218,129 @@
         }
 
         .project-card h3 {
-            color: #8B7355;
-            margin-bottom: 8px;
-            font-size: 1.1em;
+            color: #1e2d45;
+            margin-bottom: 6px;
+            font-size: 1.05em;
         }
 
-        .project-card p {
+        .project-card .project-desc {
             font-size: 1em;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .project-card .project-signal {
+            font-size: 0.9em;
+            color: #7a6030;
+            font-style: italic;
+            border-top: 1px solid #e8e0cc;
+            padding-top: 8px;
             margin-bottom: 0;
         }
 
         .project-card a {
-            color: #D4AF37;
+            color: #1e2d45;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .project-card a:hover {
-            text-decoration: underline;
+            color: #D4AF37;
         }
 
         .status-badge {
             display: inline-block;
             background-color: #5bc0de;
             color: white;
-            padding: 3px 10px;
+            padding: 2px 9px;
             border-radius: 12px;
-            font-size: 0.78em;
+            font-size: 0.72em;
             margin-left: 8px;
             vertical-align: middle;
+            font-weight: 600;
+            letter-spacing: 0.04em;
         }
 
         .status-badge.active {
-            background-color: #5cb85c;
+            background-color: #3a8f3a;
         }
 
         .status-badge.research {
             background-color: #8B7355;
         }
 
-        /* Connect Section */
+        /* ── Connect Section ── */
         .connect-section {
-            background: linear-gradient(135deg, #f4e4bc 0%, #ffd89b 100%);
-            padding: 40px;
+            background: #1e2d45;
+            padding: 48px 40px;
             text-align: center;
-            margin: 40px 0;
+            margin: 32px 0;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-bottom: 4px solid #D4AF37;
         }
 
         .connect-section h2 {
-            color: #8B7355;
+            color: white;
             font-size: 1.8em;
-            margin-bottom: 12px;
-            border: none;
-            padding: 0;
+            margin-bottom: 10px;
         }
 
         .connect-section p {
             font-size: 1.05em;
             margin-bottom: 20px;
-            color: #555;
+            color: rgba(255,255,255,0.75);
         }
 
         .connect-section .availability {
             display: inline-block;
-            background-color: #8B7355;
-            color: white;
-            padding: 8px 18px;
+            background-color: #D4AF37;
+            color: #1e2d45;
+            padding: 7px 18px;
             border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: 600;
-            margin-bottom: 20px;
+            font-size: 0.88em;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: 0.03em;
         }
 
         .connect-links {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 12px;
             flex-wrap: wrap;
         }
 
         .connect-button {
             display: inline-block;
             background-color: #D4AF37;
-            color: white;
+            color: #1e2d45;
             padding: 12px 28px;
             text-decoration: none;
             border-radius: 5px;
             font-size: 1em;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            font-weight: 700;
+            transition: all 0.2s ease;
         }
 
         .connect-button:hover {
-            background-color: #B8941E;
+            background-color: #c09c28;
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
         }
 
         .connect-button.secondary {
-            background-color: #8B7355;
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.4);
         }
 
         .connect-button.secondary:hover {
-            background-color: #6d5a42;
+            border-color: #D4AF37;
+            color: #D4AF37;
         }
 
+        /* ── Footer ── */
         footer {
-            background-color: #2c3e50;
+            background-color: #131f30;
             color: white;
             padding: 30px 20px;
             text-align: center;
@@ -252,13 +351,14 @@
             color: #D4AF37;
             text-decoration: none;
             margin: 0 12px;
-            transition: color 0.3s ease;
+            transition: color 0.2s ease;
         }
 
         footer a:hover {
             color: #ffd89b;
         }
 
+        /* ── Responsive ── */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2em;
@@ -268,12 +368,30 @@
                 font-size: 1em;
             }
 
+            .metrics-bar {
+                flex-wrap: wrap;
+            }
+
+            .metric {
+                min-width: 50%;
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .metric:last-child {
+                border-bottom: none;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
             .container {
                 padding: 15px;
             }
 
             .connect-section {
-                padding: 30px 20px;
+                padding: 32px 20px;
             }
 
             .connect-links {
@@ -286,9 +404,30 @@
 <body>
 
     <header>
-        <h1>Chad You, MD</h1>
-        <p class="title">Healthcare Data &amp; AI Leader &nbsp;·&nbsp; Product &amp; Engineering</p>
-        <p class="tagline">10+ Years Shipping Medical AI in US Health Systems &nbsp;·&nbsp; EN/中文</p>
+        <div class="header-inner">
+            <div class="headshot">CY</div>
+            <h1>Chad You, MD</h1>
+            <p class="title">Healthcare Data &amp; AI Leader &nbsp;·&nbsp; Product &amp; Engineering</p>
+            <p class="tagline">15+ Years Shipping Medical AI in US Health Systems &nbsp;·&nbsp; EN / 中文</p>
+        </div>
+        <div class="metrics-bar">
+            <div class="metric">
+                <span class="metric-number">15+</span>
+                <span class="metric-label">Years in Healthcare AI</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">50</span>
+                <span class="metric-label">States of Claims Coverage</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">122+</span>
+                <span class="metric-label">GitHub Stars</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">17+</span>
+                <span class="metric-label">Production AI Modules</span>
+            </div>
+        </div>
     </header>
 
     <div class="container">
@@ -306,27 +445,43 @@
             <h2>Career Highlights</h2>
             <ul class="highlights-list">
                 <li><strong>Embold Health</strong> — Built and analyzed claims data pipelines spanning 50 states, informing provider quality measurement at national scale.</li>
-                <li><strong>Vanderbilt University Medical Center</strong> — Leading the Clinical Research Data Core team as Sr. Product Manager &amp; Data Engineer, supporting clinical research across one of the nation's top academic medical centers.</li>
+                <li><strong>Vanderbilt University Medical Center</strong> — Led the Clinical Research Data Core team as Sr. Product Manager &amp; Data Engineer, supporting clinical research across one of the nation's top academic medical centers.</li>
                 <li><strong>Healthcare Analytics Engineer Handbook</strong> — Open-access guide for clinical AI builders with 122+ GitHub stars and a growing practitioner community.</li>
                 <li><strong>Shovel Seller MD</strong> — 17+ module applied curriculum on shipping medical LLMs in production, covering GPT-4 + claims data, medical data warehouse architecture, and AI failure modes in healthcare.</li>
             </ul>
         </section>
 
-        <!-- Tech Stack -->
+        <!-- Skills & Scope -->
         <section id="stack">
-            <h2>Tech Stack</h2>
-            <div class="stack-tags">
-                <span class="stack-tag">Python</span>
-                <span class="stack-tag">SQL</span>
-                <span class="stack-tag">dbt</span>
-                <span class="stack-tag">Azure</span>
-                <span class="stack-tag">Databricks</span>
-                <span class="stack-tag">Spark</span>
-                <span class="stack-tag">FHIR / HL7</span>
-                <span class="stack-tag">Epic</span>
-                <span class="stack-tag">LLMs in Production</span>
-                <span class="stack-tag">Claims Data</span>
-                <span class="stack-tag">Data Warehouse</span>
+            <h2>Skills &amp; Scope</h2>
+            <div class="skills-grid">
+                <div class="skills-group">
+                    <h3>Technical</h3>
+                    <div class="stack-tags">
+                        <span class="stack-tag">Python</span>
+                        <span class="stack-tag">SQL</span>
+                        <span class="stack-tag">dbt</span>
+                        <span class="stack-tag">Azure</span>
+                        <span class="stack-tag">Databricks</span>
+                        <span class="stack-tag">Spark</span>
+                        <span class="stack-tag">FHIR / HL7</span>
+                        <span class="stack-tag">Epic</span>
+                        <span class="stack-tag">LLMs in Production</span>
+                        <span class="stack-tag">Claims Data</span>
+                        <span class="stack-tag">Data Warehouse</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3>Leadership &amp; Scope</h3>
+                    <div class="stack-tags">
+                        <span class="stack-tag scope">Cross-functional Leadership</span>
+                        <span class="stack-tag scope">Clinical &amp; Engineering Alignment</span>
+                        <span class="stack-tag scope">Data Strategy &amp; Roadmapping</span>
+                        <span class="stack-tag scope">Vendor &amp; Stakeholder Management</span>
+                        <span class="stack-tag scope">Research Portfolio Oversight</span>
+                        <span class="stack-tag scope">Team Building</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -339,7 +494,8 @@
                     <a href="https://chadyou.substack.com" target="_blank">Shovel Seller MD</a>
                     <span class="status-badge active">ACTIVE</span>
                 </h3>
-                <p>Applied weekly curriculum for shipping medical LLMs in production. 17+ modules covering GPT-4 + claims data, medical data warehouse architecture, LLM failure modes in healthcare, and more. <strong>Production-ready code, legal contracts, and implementation frameworks</strong> from 15+ years in the field.</p>
+                <p class="project-desc">Applied weekly curriculum for shipping medical LLMs in production. 17+ modules covering GPT-4 + claims data, medical data warehouse architecture, LLM failure modes in healthcare, and more. Production-ready code, legal contracts, and implementation frameworks from 15+ years in the field.</p>
+                <p class="project-signal">Signals executive capacity: synthesizing deep field experience into teachable frameworks is the same skill a CDO deploys to build institutional data literacy across a health system.</p>
             </div>
 
             <div class="project-card">
@@ -347,21 +503,23 @@
                     <a href="https://github.com/youcc/healthcare_analytics_engineer_handbook" target="_blank">Healthcare Analytics Engineer Handbook</a>
                     <span class="status-badge active">ACTIVE</span>
                 </h3>
-                <p>Open-access guide bridging clinical knowledge and data skills for healthcare practitioners. ⭐ 122 stars on GitHub. Written for analytics engineers entering the healthcare space.</p>
+                <p class="project-desc">Open-access guide bridging clinical knowledge and data skills for healthcare practitioners. ⭐ 122 stars on GitHub. Written for analytics engineers entering the healthcare space.</p>
+                <p class="project-signal">122 stars reflects community trust and domain authority — evidence of thought leadership that extends beyond any single organization, and the kind of external credibility that opens doors at the board and C-suite level.</p>
             </div>
 
             <div class="project-card">
                 <h3>
                     <a href="https://github.com/youcc/awesome-azure-dp700-resources" target="_blank">Microsoft Fabric DP-700 Exam Resources</a>
                 </h3>
-                <p>Curated study guide for the Microsoft Certified Fabric Data Engineer Associate (DP-700) exam.</p>
+                <p class="project-desc">Curated study guide for the Microsoft Certified Fabric Data Engineer Associate (DP-700) exam.</p>
+                <p class="project-signal">Demonstrates hands-on engagement with the platforms the team uses — a CDO who stays technically current sets a higher bar for the organization.</p>
             </div>
         </section>
 
         <!-- Outside of Work -->
         <section id="interests">
             <h2>Outside of Work</h2>
-            <p>I practice Aikido, where the discipline of redirecting force has turned out to be surprisingly applicable to navigating healthcare IT.</p>
+            <p>I practice Aikido. The discipline of redirecting force rather than opposing it has turned out to be a useful mental model for navigating healthcare IT politics, aligning clinical and engineering teams, and building momentum inside institutions that move slowly by design.</p>
         </section>
 
     </div>
@@ -370,7 +528,8 @@
     <div class="container">
         <div class="connect-section">
             <h2>Let's Connect</h2>
-            <p>If you're building the data and AI strategy for a health system or health tech company in the US, especially Pacific Northwest, I'd like to talk.</p>
+            <div class="availability">Open to CDO / VP of Data Opportunities &nbsp;·&nbsp; Pacific Northwest preferred</div>
+            <p>If you're building the data and AI strategy for a health system or health tech company in the US — especially in the Pacific Northwest — I'd like to talk.</p>
             <div class="connect-links">
                 <a href="https://www.linkedin.com/in/chadyou/" class="connect-button" target="_blank">LinkedIn</a>
                 <a href="mailto:chaochenyou@gmail.com" class="connect-button secondary">Email Me</a>
